@@ -1,8 +1,7 @@
-from django.urls import path 
+from django.urls import path
 from . import views
 
-urlpatterns=[
-    path('',views.contact),
-    path('contact/',views.contact,name="savecontact")
+urlpatterns = [
+    path('', views.home, name='home'),  # Башкы бет үчүн
+    path('contact/', views.contact, name='contact'),  # Байланыш формасы үчүн
 ]
-
